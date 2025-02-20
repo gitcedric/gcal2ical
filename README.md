@@ -13,8 +13,7 @@ This simple web tool allows users to convert Google Calendar embed URLs into dow
 ## How to Use
 1. Get the public URL from your Google Calendar
 2. Paste the URL into the input field
-3. Click "Generate ICS Link"
-4. Use the generated download button to get your ICS file
+3. Click "Generate ICS Link", that opens a new tab with your .ics file
 
 ## Local Development
 To run this project locally:
