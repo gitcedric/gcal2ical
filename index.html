@@ -23,22 +23,7 @@
         </div>
     </div>
 
-    <script>
-        function convertAndDownload() {
-            const embedUrl = document.getElementById("calendarUrl").value;
-            const match = embedUrl.match(/src=([^&]+)/);
-
-            if (!match) {
-                document.getElementById("result").innerText = "Invalid Google Calendar embed URL.";
-                return;
-            }
-
-            const calendarId = match[1];
-            const icsUrl = `https://calendar.google.com/calendar/ical/${calendarId}/public/calendar.ics`;
-
-            document.getElementById("result").innerHTML = `<a href="${icsUrl}" class="btn green" target="_blank">Download ICS</a>`;
-        }
-    </script>
+    <script src="index.js"></script>
 </body>
 
 </html>
