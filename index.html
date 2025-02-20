@@ -14,11 +14,13 @@
     <div class="card blue-grey darken-1" style="margin-top: 50px; padding: 20px;">
         <div class="card-content white-text">
             <span class="card-title">Google Calendar to ICS Converter</span>
-            <div class="input-field">
-                <input type="text" id="calendarUrl" class="white-text" required>
-                <label for="calendarUrl">Enter Google Calendar Embed URL</label>
-            </div>
-            <button class="btn waves-effect waves-light" onclick="convertAndDownload()">Generate ICS Link</button>
+            <form onsubmit="convertAndDownload(event)">
+                <div class="input-field">
+                    <input type="text" id="calendarUrl" class="white-text" required>
+                    <label for="calendarUrl">Enter Google Calendar Embed URL</label>
+                </div>
+                <button type="submit" class="btn waves-effect waves-light">Generate ICS Link</button>
+            </form>
             <p id="result" style="margin-top: 20px;"></p>
         </div>
     </div>
