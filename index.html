@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,34 +17,29 @@
                 <h1 class="card-title">Google Calendar to ICS Converter</h1>
                 <form onsubmit="return convertAndDownload(event)" aria-label="Calendar conversion form">
                     <div class="input-field">
-                        <input 
-                            type="text" 
-                            id="calendarUrl" 
-                            class="white-text" 
-                            required 
-                            aria-required="true"
-                            aria-describedby="urlHint"
-                        >
+                        <input type="text" id="calendarUrl" class="white-text" required aria-required="true"
+                            aria-describedby="urlHint">
                         <label for="calendarUrl">Enter Google Calendar Embed URL</label>
-                        <span id="urlHint" class="helper-text">Paste the embed URL from your Google Calendar settings</span>
+                        <span id="urlHint" class="helper-text">Paste the embed URL from your Google Calendar
+                            settings</span>
                     </div>
-                    <button 
-                        type="submit" 
-                        class="btn waves-effect waves-light"
-                        aria-label="Generate ICS calendar link"
-                    >
+                    <button type="submit" class="btn waves-effect waves-light" aria-label="Generate ICS calendar link">
                         Generate ICS Link
                     </button>
                 </form>
-                <div 
-                    id="result" 
-                    style="margin-top: 20px;" 
-                    role="status" 
-                    aria-live="polite"
-                ></div>
+                <div id="result" style="margin-top: 20px;" role="status" aria-live="polite"></div>
             </div>
         </div>
     </main>
+    <footer class="blue-grey-text text-darken-1" style="text-align: center; padding: 20px; margin-top: 20px;">
+        <p>
+            <a href="https://github.com/gitcedric/gcal2ical" class="blue-grey-text text-darken-1">
+                View source code on GitHub
+                <i class="material-icons">code</i>
+            </a>
+        </p>
+    </footer>
     <script src="script.js"></script>
 </body>
+
 </html>
