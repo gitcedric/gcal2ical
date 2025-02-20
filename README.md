@@ -1,5 +1,5 @@
 # Google Calendar to ICS Converter (gcal2ical)
-[Use it](https://github.com/gitcedric/gcal2ical/)
+Try the converter on [gitcedric.github.io/gcal2ical](https://gitcedric.github.io/gcal2ical/).
 
 ## About
 This simple web tool allows users to convert Google Calendar embed URLs into downloadable ICS format links.
