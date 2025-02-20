@@ -11,5 +11,5 @@ function convertAndDownload(event) {
     const calendarId = match[1];
     const icsUrl = `https://calendar.google.com/calendar/ical/${calendarId}/public/basic.ics`;
     
-    window.open(icsUrl, "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,width=800,height=600");
+    window.open(icsUrl, "_blank");
 }
